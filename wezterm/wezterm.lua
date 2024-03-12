@@ -1,4 +1,4 @@
-local wezterm = require 'wezterm'
+local wezterm = require "wezterm"
 
 local config = {}
 
@@ -6,6 +6,12 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.font = wezterm.font_with_fallback {
+    "Hurmit Nerd Font",
+    "AnonymicePro Nerd Font Mono",
+    "D2Coding",
+    "Cica",
+}
 config.font_size = 16
 config.color_scheme = "Tokyo Night"
 
@@ -24,8 +30,8 @@ config.keys = {
 	-- Opt+Shift+f
 	-- Toggle screen
 	{
-		key = 'f',
-		mods = 'SHIFT|META',
+		key = "f",
+		mods = "SHIFT|META",
 		action = wezterm.action.ToggleFullScreen,
 	},
 }
