@@ -56,6 +56,11 @@ require("lazy").setup({
         end,
     },
     {
+        "mrcjkb/rustaceanvim",
+        version = "^4",
+        ft = { "rust" },
+    },
+    {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {
