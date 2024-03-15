@@ -1,0 +1,8 @@
+require("config.colorscheme")
+require("config.debugger")
+require("config.gitsigns")
+require("config.indent_blankline")
+require("config.mason")
+require("config.lsp")
+require("config.lualine")
+require("config.treesitter")
