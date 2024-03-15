@@ -1,3 +1,3 @@
-require("options")
-require("plugins")
+require("vim-options")
+require("plugin-manager")
 
