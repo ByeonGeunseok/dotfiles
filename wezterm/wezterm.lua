@@ -13,11 +13,12 @@ config.font = wezterm.font_with_fallback {
     "Cica",
 }
 config.font_size = 16
+-- config.line_height = 0.95
 config.color_scheme = "Tokyo Night"
 
 config.hide_tab_bar_if_only_one_tab = true
 config.window_background_opacity = 0.9
-config.scrollback_lines = 3000
+config.scrollback_lines = 100000
 
 local mux = wezterm.mux
 wezterm.on("gui-startup", function(cmd)
