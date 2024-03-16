@@ -3,9 +3,10 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/nvim-treesitter-textobjects",
     "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    -- "mfussenegger/nvim-dap",
-    -- "rcarriga/nvim-dap-ui",
+    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
     {
         "mrcjkb/rustaceanvim", version = "^4", ft = { "rust" },
     },
