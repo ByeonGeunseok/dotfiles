@@ -3,6 +3,7 @@ local vo = vim.opt
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vo.fileformats = unix
 vo.number = true
 vo.relativenumber = true
 
