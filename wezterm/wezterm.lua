@@ -3,7 +3,7 @@ local wezterm = require "wezterm"
 local config = {}
 
 if wezterm.config_builder then
-	config = wezterm.config_builder()
+    config = wezterm.config_builder()
 end
 
 config.font = wezterm.font_with_fallback {
@@ -22,19 +22,19 @@ config.scrollback_lines = 100000
 
 local mux = wezterm.mux
 wezterm.on("gui-startup", function(cmd)
-	local tab, pane, window = mux.spawn_window(cmd or {})
-	window:gui_window():toggle_fullscreen()
+    local tab, pane, window = mux.spawn_window(cmd or {})
+    window:gui_window():toggle_fullscreen()
 end)
 
 local act = wezterm.action
 config.keys = {
-	-- Opt+Shift+f
-	-- Toggle screen
-	{
-		key = "f",
-		mods = "SHIFT|META",
-		action = wezterm.action.ToggleFullScreen,
-	},
+    -- Opt+Shift+f
+    -- Toggle screen
+    {
+        key = "f",
+        mods = "SHIFT|META",
+        action = wezterm.action.ToggleFullScreen,
+    },
 }
 
 return config
