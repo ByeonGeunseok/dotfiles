@@ -1,11 +1,15 @@
 require("lazy").setup({
-    "junegunn/seoul256.vim",
+    -- "junegunn/seoul256.vim",
+    {
+        "rose-pine/neovim", name = "rose-pine"
+    },
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/nvim-treesitter-textobjects",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     "mfussenegger/nvim-dap",
+    "nvim-neotest/nvim-nio",
     "rcarriga/nvim-dap-ui",
     {
         "mrcjkb/rustaceanvim", version = "^4", ft = { "rust" },
