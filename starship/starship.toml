@@ -170,10 +170,10 @@ symbol = " "
 symbol = " "
 
 [time]
-disabled = true
+disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A fg:#fbf1c7"
-format = '[ ♥ $time ]($style)'
+format = '[ 󰔛 $time ]($style)'
 
 [line_break]
 disabled = false
