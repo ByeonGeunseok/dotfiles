@@ -13,10 +13,10 @@ My configuration files
 - powershell
 ``` ~//Documents//PowerShell ```
 - starship
-``` ~/.config/starship/ ```
+``` ~/.config/starship.toml ```
 - tmux
 ``` ~/.tmux.conf ```
 - wezterm
-``` ~/.wezterm.lua ```
+``` ~/.config/wezterm/.wezterm.lua ```
 - zsh
 ``` ~/.zshrc ```
