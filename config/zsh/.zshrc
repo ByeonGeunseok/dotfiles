@@ -32,14 +32,21 @@ fi
 
 # DEFAULT_USER="$(whoami)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+OS=$(uname)
+if [[ "$OS" == "Linux" ]]; then
+    echo "This is Linux."
+elif [[ "$OS" == "Darwin" ]]; then
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
-# export PATH=$HOME/.nodebrew/current/bin:$PATH
-export NODEBREW_ROOT=/opt/homebrew/var/nodebrew
-export PATH=/opt/homebrew/var/nodebrew/current/bin:$PATH
+    # export PATH=$HOME/.nodebrew/current/bin:$PATH
+    export NODEBREW_ROOT=/opt/homebrew/var/nodebrew
+    export PATH=/opt/homebrew/var/nodebrew/current/bin:$PATH
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+    echo "This is another OS."
+fi
 
 eval "$(starship init zsh)"
