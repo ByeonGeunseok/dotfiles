@@ -13,6 +13,14 @@ i::PgUp
 u::PgDn
 o::End
 
+a::Left
+s::Down
+w::Up
+d::Right
+
+q::PgUp
+z::PgDn
+
 m::BackSpace 
 ,::Delete
 #HotIf                                                      ; Always reset #HotIf directive when done
